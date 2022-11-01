@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+* {
+	font-family: "Montserrat", sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+
+li,
+a,
+button {
+	all: initial;
+	all: unset;
+}
+
+a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+body {
+	cursor: default;
+}
+
+header {
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+
+.background {
+	height: 300px;
+	width: 100vw;
+	background: linear-gradient(
+		to right,
+		rgba(20, 20, 20, 0.9) 35%,
+		rgba(0, 0, 0, 0)
+	);
+	position: absolute;
+	z-index: 1;
+}
+
+.header-img {
+	width: 100%;
+	transform: translateY(-300px);
+}
+
+.logo {
+	z-index: 2;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	color: white;
+	left: 50px;
+}
+
+.logo-ikon {
+	height: 150px;
+}
+
+.bilde-tekst {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	z-index: 2;
+	color: white;
+	background-color: grey;
+}
+
+main {
+	display: flex;
+	max-width: 2000px;
+	width: 85vw;
+	margin: 0px auto;
+	margin-top: 50px;
+	justify-content: space-between;
+}
+
+.alle-menyer {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	width: 50vw;
+}
+
+.meny-liste {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.matrett {
+	margin-left: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.produkt-info {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+
+.tittel {
+	font-size: 23px;
+}
+
+.forklaring {
+	font-size: 20px;
+}
+
+.pris {
+	font-size: 20px;
+}
+
+.allergener {
+	font-size: 15px;
+}
+
+.allergener-ikoner {
+	height: 30px;
+}
+.sosiale-medier-logo {
+	height: 25px;
+}
+
+.lenke {
+	align-items: center;
+	display: flex;
+	gap: 5px;
+}
+
+.lenke > img {
+	height: 25px;
+}
+
+.sosiale-lenker {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.info {
+	position: sticky;
+	top: 50px;
+	height: 300px;
+	font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+footer {
+	display: flex;
+	gap: 80px;
+	justify-content: center;
+	background-color: rgb(98, 98, 98);
+	height: 250px;
+	color: white;
+	margin-top: 100px;
+	padding-top: 80px;
+}
+
+footer > div {
+	max-width: 350px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
