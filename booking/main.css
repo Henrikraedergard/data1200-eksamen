@@ -1,0 +1,20 @@
+:root {
+    --color: rgb(141, 115, 67);
+    --bg-color: rgb(247, 247, 247);
+    --black-color: rgb(0,0,0);
+}
+
+section>.firstHeader>.bookingHode>h1{
+    color: var(--black-color);
+    font-size: 50px;
+}
+
+section>.firstHeader>.bookingHode>h1>span{
+    color: var(--color);
+    font-size: 60px;
+}
+
+section>.firstHeader>.bookingHode>p{
+    color: var(--black-color);
+    font-size: 25px;
+}
