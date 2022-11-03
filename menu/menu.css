@@ -1,0 +1,82 @@
+/* Menyen */
+main {
+    display: flex;
+    max-width: 2000px;
+    width: 85vw;
+    margin: 0px auto;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+/* Liste med lunsj, middag og brødfjøler */
+.alle-menyer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50vw;
+}
+
+.alle-menyer>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.alle-menyer>ul>li {
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Matretten */
+.produkt-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.produkt-info>h2 {
+    font-size: 23px;
+}
+
+.produkt-info+p {
+    font-size: 20px;
+}
+
+/* Allergener */
+.allergener {
+    font-size: 15px;
+}
+
+.allergener>li>img {
+    height: 30px;
+}
+
+
+/* Sidebar */
+.info {
+    position: sticky;
+    top: 50px;
+    height: 300px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Liste med sosiale lenker */
+.sosiale-lenker {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sosiale-lenker>li>a {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+
+.sosiale-lenker>li>a>img {
+    height: 25px;
+}
