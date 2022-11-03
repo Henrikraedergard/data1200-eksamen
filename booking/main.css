@@ -4,17 +4,21 @@
     --black-color: rgb(0,0,0);
 }
 
-section>.firstHeader>.bookingHode>h1{
+section>.firstHeader>h1{
     color: var(--black-color);
     font-size: 50px;
 }
 
-section>.firstHeader>.bookingHode>h1>span{
+section>.firstHeader>h1>span{
     color: var(--color);
     font-size: 60px;
 }
 
-section>.firstHeader>.bookingHode>p{
+section>.firstHeader>p{
     color: var(--black-color);
     font-size: 25px;
+}
+
+section>.firstHeader{
+    text-align: center;
 }
