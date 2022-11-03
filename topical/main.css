@@ -16,7 +16,6 @@
 section {
     height: 650px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 
