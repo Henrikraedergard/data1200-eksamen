@@ -18,6 +18,7 @@ section {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 
 section>.content {
@@ -61,6 +62,7 @@ section>.images>img {
     padding: 10px;
     box-shadow: 3px 3px 4px 4px rgba(0, 00, 00, 0.1);
     background-color: white;
+    z-index: 1;
 }
 
 /* Styling for annen-hver section */
@@ -91,7 +93,6 @@ section:nth-child(2)>.content>p, section:nth-child(4)>.content>p {
     left: -400px;
     bottom: 40px;
     transform: rotate(-4deg);
-    z-index: 0;
 }
 
 .landing>.images>img:nth-child(2) {
@@ -157,6 +158,10 @@ section:nth-child(2)>.content>p, section:nth-child(4)>.content>p {
     left: 0px;
     top: 150px;
     transform: rotate(-6deg);
+}
+
+.meny>.floating-img {
+    position: absolute; height: 400px; top: -100px; left: 60vw;
 }
 
 
