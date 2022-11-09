@@ -170,8 +170,34 @@ section:nth-child(2)>.content>p, section:nth-child(4)>.content>p {}
 /* 
 
      -- Accessibility-section --
-
 */
+
+.accessibility>.images>img:nth-child(1) {
+    left: -70px;
+    top: 230px;
+    transform: rotate(-9deg);
+}
+
+.accessibility>.images>img:nth-child(2) {
+    left: 10px;
+    bottom: 90px;
+    transform: rotate(-2deg);
+}
+
+.accessibility>.images>img:nth-child(3) {
+    left: 170px;
+    top: 150px;
+    transform: rotate(6deg);
+}
+
+.accessibility>.floating-img {
+    position: absolute;
+    height: 400px;
+    top: -100px;
+    left: 60vw;
+}
+
+
 
 
 
