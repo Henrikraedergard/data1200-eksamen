@@ -98,14 +98,16 @@ main {
     position: sticky;
     top: 50px;
     height: 300px;
-    font-size: 20px;
+    font-size: 17px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
     color: black;
+
 }
 .info>h1{
     color: rgb(141, 115, 67);
+    margin-bottom: 20px;
 }
 
 /* Liste med sosiale lenker */
@@ -113,6 +115,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    margin-top: 15px;
 }
 
 .sosiale-lenker>li>a {
@@ -122,5 +125,5 @@ main {
 }
 
 .sosiale-lenker>li>a>img {
-    height: 25px;
+    height: 20px;
 }
