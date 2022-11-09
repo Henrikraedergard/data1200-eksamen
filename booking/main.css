@@ -22,3 +22,29 @@ section>.firstHeader>p{
 section>.firstHeader{
     text-align: center;
 }
+
+section>.omSection{
+    text-align: left;
+}
+
+section>.omSection>h1>span{
+    font-size: 35px;
+    color: var(--color);
+}
+
+section>.hvorErSection{
+    text-align: right;
+}
+
+section>.hvorErSection>h1>span{
+    font-size: 35px;
+    color: var(--color);
+}
+
+section>.hvordanReservereSection{
+    text-align: left;
+}
+
+section>.hvordanReservereSection>h1>span{
+    color: var(--color);
+}
