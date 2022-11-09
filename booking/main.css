@@ -1,0 +1,50 @@
+:root {
+    --color: rgb(141, 115, 67);
+    --bg-color: rgb(247, 247, 247);
+    --black-color: rgb(0,0,0);
+}
+
+section>.firstHeader>h1{
+    color: var(--black-color);
+    font-size: 50px;
+}
+
+section>.firstHeader>h1>span{
+    color: var(--color);
+    font-size: 60px;
+}
+
+section>.firstHeader>p{
+    color: var(--black-color);
+    font-size: 25px;
+}
+
+section>.firstHeader{
+    text-align: center;
+}
+
+section>.omSection{
+    text-align: left;
+}
+
+section>.omSection>h1>span{
+    font-size: 35px;
+    color: var(--color);
+}
+
+section>.hvorErSection{
+    text-align: right;
+}
+
+section>.hvorErSection>h1>span{
+    font-size: 35px;
+    color: var(--color);
+}
+
+section>.hvordanReservereSection{
+    text-align: left;
+}
+
+section>.hvordanReservereSection>h1>span{
+    color: var(--color);
+}
