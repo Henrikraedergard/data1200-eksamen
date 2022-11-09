@@ -1,4 +1,11 @@
 /* Menyen */
+
+
+
+:root{
+    color: rgb(141, 115, 67);
+    
+}
 main {
     display: flex;
     max-width: 2000px;
@@ -6,14 +13,32 @@ main {
     margin: 0px auto;
     margin-top: 50px;
     justify-content: space-between;
+    
 }
 
 /* Liste med lunsj, middag og brødfjøler */
+
+.header>h1 {
+    font-size: 35px;
+    color: rgb(141, 115, 67);
+    margin-bottom: 30px;
+
+}
+.header>h1>span{
+    color: black;
+}
+
+
+
+
+
 .alle-menyer {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    width: 50vw;
+    width: 55vw;
+    color: black;
+    
 }
 
 .alle-menyer>ul {
@@ -22,34 +47,49 @@ main {
     gap: 20px;
 }
 
+
 .alle-menyer>ul>li {
-    margin-left: 20px;
+    margin-left: 10px;
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
+}
+.alle-menyer>ul>h1{
+    font-weight: 10;
+    font-size: 25px;
 }
 
 /* Matretten */
 .produkt-info {
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 8px;
+    
 }
 
 .produkt-info>h2 {
-    font-size: 23px;
+    font-size: 20px;
+    color: rgb(141, 115, 67);
+ 
+    
+
 }
 
-.produkt-info+p {
-    font-size: 20px;
+.produkt-info>p {
+    font-size: 15px;
+ 
+   
+   
 }
 
 /* Allergener */
 .allergener {
-    font-size: 15px;
+    font-size: 10px;
 }
 
 .allergener>li>img {
-    height: 30px;
+    height: 18px;
+    margin-bottom: 20px;
 }
 
 
@@ -62,6 +102,10 @@ main {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    color: black;
+}
+.info>h1{
+    color: rgb(141, 115, 67);
 }
 
 /* Liste med sosiale lenker */
