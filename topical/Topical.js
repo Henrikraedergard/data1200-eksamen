@@ -57,12 +57,11 @@ function changeStyle() {
 changeStyle();
 
 // starter intervallet
-let interval = setInterval(changeStyle, 2000);
+let interval = setInterval(changeStyle, 1400);
 
 // Dersom bruker trykker på en boks
 function showText(event) {
 	let element = event.target;
-
 	// viser bakgrunn som bruker kan trykke på for å lukke boksen
 	let bg = document.getElementById("bg");
 	bg.style.display = "block";
@@ -80,6 +79,11 @@ function showText(event) {
 	if (element.classList.value != "active") {
 		element.classList.add("active");
 	}
+
+	let helperText = document.getElementById("helper-text");
+	helperText.innerText = "Trykk utenfor teksteboksen for å lukke den";
+
+	let allBoxes = document.getElementById("color-boxes");
 }
 
 // dersom bruker trykker på bakgrunnen
@@ -93,4 +97,7 @@ function removeText() {
 	interval = setInterval(changeStyle, 2000);
 	bg.style.display = "none";
 	changeStyle();
+
+	let helperText = document.getElementById("helper-text");
+	helperText.innerText = "Trykk på boksene over";
 }

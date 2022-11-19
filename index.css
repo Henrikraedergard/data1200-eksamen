@@ -1,17 +1,8 @@
 /* 
 
-     -- Standard --
+    Koblet till index.html 
 
 */
-
-:root {
-    --color: rgb(141, 115, 67);
-    --bg-color: rgb(247, 247, 247);
-}
-
-
-
-/* Standar styling på section */
 
 section {
     height: 650px;
@@ -56,13 +47,17 @@ section>.images {
     margin: 0px 60px;
 }
 
-section>.images>img {
-    height: 290px;
+section>.images>div {
+    width: 290px;
     position: absolute;
     padding: 10px;
     box-shadow: 3px 3px 4px 4px rgba(0, 0, 0, 0.1);
     background-color: white;
     z-index: 1;
+}
+
+section>.images>div>img {
+    width: 100%;
 }
 
 /* Styling for annen-hver section */
@@ -87,19 +82,19 @@ section:nth-child(2)>.content>p, section:nth-child(4)>.content>p {}
 
 */
 
-.landing>.images>img:nth-child(1) {
+.landing>.images>div:nth-child(1) {
     left: -450px;
     bottom: 40px;
     transform: rotate(-4deg);
 }
 
-.landing>.images>img:nth-child(2) {
+.landing>.images>div:nth-child(2) {
     left: -250px;
     bottom: 80px;
     transform: rotate(2deg);
 }
 
-.landing>.images>img:nth-child(3) {
+.landing>.images>div:nth-child(3) {
     left: -50px;
     bottom: 30px;
     transform: rotate(7deg);
@@ -114,19 +109,19 @@ section:nth-child(2)>.content>p, section:nth-child(4)>.content>p {}
 */
 
 
-.booking>.images>img:nth-child(1) {
+.booking>.images>div:nth-child(1) {
     top: -150px;
     left: 70px;
     transform: rotate(-9deg);
 }
 
-.booking>.images>img:nth-child(2) {
+.booking>.images>div:nth-child(2) {
     top: 0px;
     left: 200px;
     transform: rotate(8deg);
 }
 
-.booking>.images>img:nth-child(3) {
+.booking>.images>div:nth-child(3) {
     top: 200px;
     left: 40px;
     transform: rotate(-3deg);
@@ -140,19 +135,19 @@ section:nth-child(2)>.content>p, section:nth-child(4)>.content>p {}
 
 */
 
-.meny>.images>img:nth-child(1) {
+.meny>.images>div:nth-child(1) {
     left: -400px;
     top: 200px;
     transform: rotate(1deg);
 }
 
-.meny>.images>img:nth-child(2) {
+.meny>.images>div:nth-child(2) {
     left: -200px;
     top: 180px;
     transform: rotate(-4deg);
 }
 
-.meny>.images>img:nth-child(3) {
+.meny>.images>div:nth-child(3) {
     left: -50px;
     top: 150px;
     transform: rotate(-6deg);
@@ -172,19 +167,19 @@ section:nth-child(2)>.content>p, section:nth-child(4)>.content>p {}
      -- Accessibility-section --
 */
 
-.accessibility>.images>img:nth-child(1) {
+.accessibility>.images>div:nth-child(1) {
     left: -70px;
     top: 200px;
     transform: rotate(-9deg);
 }
 
-.accessibility>.images>img:nth-child(2) {
+.accessibility>.images>div:nth-child(2) {
     left: 10px;
     bottom: 70px;
     transform: rotate(-2deg);
 }
 
-.accessibility>.images>img:nth-child(3) {
+.accessibility>.images>div:nth-child(3) {
     left: 170px;
     top: 150px;
     transform: rotate(6deg);
@@ -196,11 +191,6 @@ section:nth-child(2)>.content>p, section:nth-child(4)>.content>p {}
     top: -100px;
     left: 60vw;
 }
-
-
-
-
-
 
 
 /* 

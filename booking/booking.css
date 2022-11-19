@@ -1,80 +1,38 @@
-:root {
-    --color: rgb(141, 115, 67);
-    --bg-color: rgb(247, 247, 247);
-    --black-color: rgb(0,0,0);
+main {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
 
-section>.firstHeader>h1{
-    color: var(--black-color);
-    font-size: 50px;
-}
-
-section>.firstHeader>h1>span{
-    color: var(--color);
-    font-size: 60px;
-}
-
-section>.firstHeader>p{
-    color: var(--black-color);
-    font-size: 25px;
-}
-
-section>.firstHeader{
+header {
+    margin: 100px 0px;
     text-align: center;
 }
 
-section>.omSection{
-    text-align: left;
-    width: 500px;
+header>div>h1 {
+    font-size: 50px;
 }
 
-section>.omSection>p{
-    font-size: 20px;
+.praktisk-info>h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 70px;
 }
 
-section>.omSection>h1{
-    font-size: 40px;
+
+.praktisk-info>ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-weight: 100;
+    font-size: 25px;
+    width: 80vw;
+    gap: 30px;
+    margin: 20px auto;
 }
 
-section>.omSection>h1>span{
-    font-size: 35px;
-    color: var(--color);
-}
-
-section>.hvorErSection{
-    text-align: right;
-}
-
-section>.hvorErSection>h1{
-    font-size: 40px;
-}
-
-section>.hvorErSection>p{
-    font-size: 20px;
-}
-
-section>.hvorErSection>h1>span{
-    font-size: 35px;
-    color: var(--color);
-}
-
-section>.hvordanReservereSection{
-    text-align: left;
-}
-
-section>.hvordanReservereSection>h1{
-    font-size: 40px;
-}
-
-section>.hvordanReservereSection>p{
-    font-size: 20px;
-}
-
-section>.hvordanReservereSection>h1>span{
-    color: var(--color);
-}
-
-section:nth-child(3), section:nth-child(5) {
+.praktisk-info>ul>li {
     background-color: var(--bg-color);
-    flex-direction: row-reverse;
+    padding: 40px 20px;
+    border-radius: 4px;
 }

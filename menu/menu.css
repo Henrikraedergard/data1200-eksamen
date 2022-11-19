@@ -1,12 +1,5 @@
 /* Menyen */
 
-
-
-:root {
-    /* color: rgb(141, 115, 67); */
-
-}
-
 main {
     display: flex;
     max-width: 2000px;
@@ -20,19 +13,8 @@ main {
 /* Liste med lunsj, middag og brødfjøler */
 
 .header>h1 {
-    font-size: 35px;
-    color: rgb(141, 115, 67);
-    margin-bottom: 30px;
-
+    font-size: 60px;
 }
-
-.header>h1>span {
-    color: black;
-}
-
-
-
-
 
 .alle-menyer {
     display: flex;
@@ -111,6 +93,7 @@ main {
 
 .info>h1 {
     color: rgb(141, 115, 67);
+    font-size: 60px;
     margin-bottom: 20px;
 }
 

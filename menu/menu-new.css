@@ -1,0 +1,85 @@
+header {
+    margin: 100px 0px;
+    text-align: center;
+}
+
+main {
+    background-color: rgb(252, 252, 252);
+    width: 80vw;
+    margin: 0px auto;
+    box-shadow: 0px 0px 20px 6px rgba(128, 128, 128, 0.291);
+    padding: 100px;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+/* Liste med lunsj, middag og brødfjøler */
+
+.alle-menyer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: black;
+
+
+}
+
+.alle-menyer>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.alle-menyer>ul>li {
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.alle-menyer>ul>h1 {
+    font-weight: 100;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.alle-menyer>ul>li>p {
+    font-size: 20px;
+}
+
+/* Matretten */
+.produkt-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.produkt-info>h2 {
+    font-size: 25px;
+    color: var(--color);
+    font-weight: 100;
+}
+
+.produkt-info>p {
+    font-size: 20px;
+
+
+
+}
+
+/* Allergener */
+.allergener {
+    font-size: 00px;
+}
+
+.allergener>li>img {
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+img {
+    height: 30px;
+}

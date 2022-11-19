@@ -1,10 +1,24 @@
+/* 
+
+	Generell css styles. Koblet til alle HTML filer
+
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+:root {
+	--color: rgb(141, 115, 67);
+	--bg-color: rgb(247, 247, 247);
+	--black-color: rgb(0, 0, 0);
+}
+
 
 
 * {
 	font-family: "Montserrat", sans-serif;
 	padding: 0px;
 	margin: 0px;
+	box-sizing: border-box;
 }
 
 li,
@@ -23,48 +37,13 @@ body {
 	cursor: default;
 }
 
-
-/* CSS Header styling */
-/* header {
-	height: 300px;
-	overflow: hidden;
-	position: relative;
+h1, h2, h3, h4, h5 {
+	font-size: 50px;
 }
 
-header>div {
-	height: 300px;
-	width: 100vw;
-	background: linear-gradient(to right,
-			rgba(20, 20, 20, 0.9) 35%,
-			rgba(0, 0, 0, 0));
-	position: absolute;
-	z-index: 1;
+p {
+	font-size: 20px;
 }
-
-header>img {
-	width: 100%;
-	transform: translateY(-300px);
-}
-
-header img:nth-child(3) {
-	z-index: 2;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	color: white;
-	left: 50px;
-	width: 400px;
-}
-
-header>p {
-	position: absolute;
-	bottom: 0px;
-	right: 0px;
-	z-index: 2;
-	color: white;
-	background-color: grey;
-} */
-
 
 /* Navbar */
 
@@ -86,34 +65,22 @@ nav>a {
 nav>a:hover {
 	text-decoration: none;
 	padding-bottom: 5px;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid var(--black-color);
 }
+
+/* 
+	Siden denne a.active:hover står under a:hover vil den bli prioritert og dermed vise border-bottom
+	med den aktive fargen og ikke fargen svart
+*/
+nav>a.active:hover {
+	border-bottom: 2px solid var(--color);
+}
+
 
 nav>.active {
-	color: rgb(141, 115, 67);
+	color: var(--color);
 	text-decoration: none;
 	padding-bottom: 3px;
-	border-bottom: 1px solid rgb(141, 115, 67);
-	font-size: 800;
-}
-
-
-/* CSS footer styling */
-footer {
-	display: flex;
-	padding: 15px;
-	gap: 80px;
-	justify-content: space-around;
-	background-color: rgb(98, 98, 98);
-	height: 250px;
-	color: white;
-	margin-top: 100px;
-	padding-top: 80px;
-}
-
-footer>div {
-	max-width: 350px;
-	display: flex;
-	flex-direction: column;
-	gap: 5px;
+	border-bottom: 2px solid var(--color);
+	font-weight: 600;
 }
