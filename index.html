@@ -17,12 +17,30 @@
 
 <body>
     <!-- Navbar -->
-    <nav>
+    <nav id="big-nav">
         <a class="active" href="/index.html">Velkommen</a>
         <a href="/booking/booking.html">Booking</a>
-        <a href="/menu/menu-new.html">Meny</a>
-        <a href="/accessibility/Accessibility.html">Tilgjengelighet</a>
-        <a href="/topical/Topical.html">Topical</a>
+        <a href="/menu/menu.html">Meny</a>
+        <a href="/accessibility/accessibility.html">Tilgjengelighet</a>
+        <a href="/topical/topical.html">Topical</a>
+    </nav>
+
+    <!--
+        https://www.flaticon.com/free-icon/close_2997911?term=close&page=1&position=6&page=1&position=6&related_id=2997911&origin=search
+        https://www.flaticon.com/free-icon/hamburger_7710488?term=hamburger&page=1&position=1&page=1&position=1&related_id=7710488&origin=search
+    -->
+    <nav id="small-nav">
+        <button onclick="showNavMenu()">
+            <img src="media/Ikoner/hamburger.png" alt="">
+        </button>
+        <ul id="nav-list">
+            <button onclick="hideNavBar()"><img src="media/Ikoner/close.png" alt=""></button>
+            <a class="active" href="/index.html">Velkommen</a>
+            <a href="/booking/booking.html">Booking</a>
+            <a href="/menu/menu.html">Meny</a>
+            <a href="/accessibility/accessibility.html">Tilgjengelighet</a>
+            <a href="/topical/topical.html">Topical</a>
+        </ul>
     </nav>
 
     <!-- Hoveddelen av siden -->
@@ -39,18 +57,18 @@
             <div class="images">
                 <!-- Bilde av julie aagaard: https://www.pexels.com/nb-no/bilde/kafe-bord-arkitektur-luksus-2467287/-->
                 <div>
-                    <img src="media/stock-photos/quark-studio.jpg" alt="">
+                    <img src="media/stock-photos/quark-studio.jpg" alt="Barista som gir kaffe til kunde">
                     <p>Bilde av julie aagaard</p>
                 </div>
 
                 <!-- Bilde av Quark Studio: https://www.pexels.com/nb-no/bilde/kafe-barista-innendors-mann-2506993/ -->
                 <div>
-                    <img src="media/stock-photos/lina-kivaka.jpg" alt="">
                     <p>Bilde av Quark Studio</p>
+                    <img src="media/stock-photos/lina-kivaka.jpg" alt="kaffe og doughnut på spisebord">
                 </div>
                 <!-- Bilde av Lina Kivaka: https://www.pexels.com/nb-no/bilde/glass-kafe-bord-uskarphet-1813466/ -->
                 <div>
-                    <img src="media/stock-photos/julie-aagaard.jpg" title="Hei" alt="">
+                    <img src="media/stock-photos/julie-aagaard.jpg" alt="bilde av kafé">
                     <p>Bilde av Lina Kivaka</p>
                 </div>
             </div>
@@ -67,17 +85,17 @@
                 <!-- Bilde av Emma Bauso: https://www.pexels.com/nb-no/bilde/kyss-kysse-samvaer-kjole-2253870/ -->
                 <div>
                     <p>Bilde av Emma Bauso</p>
-                    <img src="media/stock-photos/emma-bauso.jpeg" alt="">
+                    <img src="media/stock-photos/emma-bauso.jpeg" alt="To personer som gifter seg">
                 </div>
 
                 <!-- Bilde av Cedric Fauntleroy: https://www.pexels.com/nb-no/bilde/dekorasjoner-stige-konfetti-hengende-7220565/ -->
                 <div>
                     <p>Bilde av Cedric Fauntleroy</p>
-                    <img src="media/stock-photos/cedric-fauntleroy.jpeg" alt="">
+                    <img src="media/stock-photos/cedric-fauntleroy.jpeg" alt="Personer som dekorerer for fest">
                 </div>
                 <!-- Bilde av Diva Plavalaguna: https://www.pexels.com/nb-no/bilde/samarbeid-sitte-virksomhet-notisboker-6146820/ -->
                 <div>
-                    <img src="media/stock-photos/diva-plavalaguna.jpeg" alt="">
+                    <img src="media/stock-photos/diva-plavalaguna.jpeg" alt="To personer som planlegger sammen">
                     <p>Bilde av Diva Plavalaguna</p>
                 </div>
             </div>
@@ -87,10 +105,10 @@
         <section class="meny">
             <div class="content">
                 <h1>Ta en titt på <br><span>Menyen vår</span></h1>
-                <p></p>
+                <p>Kom innom for en morgenkaffe hos oss eller en nybakt lønsj!</p>
                 <a href="">Se mer</a>
             </div>
-            <img class="floating-img" src="media/stock-photos/kaffe.png" alt="">
+            <img class="floating-img" src="media/stock-photos/kaffe.png" alt="Kopp som søler kaffe">
             <div class="images">
                 <!-- Bilde av julie aagaard: https://www.pexels.com/nb-no/bilde/kafe-bord-arkitektur-luksus-2467287/-->
                 <div>
@@ -114,34 +132,37 @@
         <section class="accessibility">
             <div class="content">
                 <h1>Les mer om våre<br><span> tanker rundt tilgjengelighet</span></h1>
-
+                <p>Vi mener verden skal være tilgjengelig for alle, og tar store grep for det</p>
                 <a href="">Se mer</a>
             </div>
             <div class="images">
                 <!-- Bilde av Tarzine Jackson: https://www.pexels.com/nb-no/bilde/glass-kafe-bord-uskarphet-1813466/ -->
                 <div>
-                    <img src="media/stock-photos/pexels-tarzine-jackson-773371 (1).jpg" alt="">
+                    <img src="media/stock-photos/pexels-tarzine-jackson-773371 (1).jpg"
+                        alt="Bilde av kvinne med briller">
                     <p>Bilde av Tarzine Jackson</p>
                 </div>
 
                 <!-- Bilde av Alexander Suhorcuv: https://www.pexels.com/nb-no/bilde/kafe-bord-arkitektur-luksus-2467287/-->
                 <div>
                     <p>Bilde av Alexander Suhorcuv</p>
-                    <img src="media/stock-photos/pexels-alexander-suhorucov-6457563 (1).jpg" alt="">
+                    <img src="media/stock-photos/pexels-alexander-suhorucov-6457563 (1).jpg"
+                        alt="Hender som holder hverandre">
                 </div>
                 <!-- Bilde av Andrea Piacquadio: https://www.pexels.com/nb-no/bilde/kafe-barista-innendors-mann-2506993/ -->
                 <div>
-                    <img src="media/stock-photos/pexels-andrea-piacquadio-3768131 (1) (1).jpg" alt="">
+                    <img src="media/stock-photos/pexels-andrea-piacquadio-3768131 (1) (1).jpg"
+                        alt="En person sammen med en eldre person">
                     <p>Bilde av Andrea Piacquadio</p>
                 </div>
             </div>
         </section>
 
         <!-- Topical-section -->
-        <section>
+        <section class="topical">
             <div class="content">
                 <h1>Refleksjon rundt<br><span>Topical temaet</span></h1>
-                <p></p>
+                <p>Se på siden om Data1100 teksten vår med en morsom vri på utseende på siden</p>
                 <a href="">Se mer</a>
             </div>
             <div class="images">
@@ -198,7 +219,7 @@
         </div>
 
     </footer> -->
-
+    <script src="navbar.js"></script>
 </body>
 
 </html>

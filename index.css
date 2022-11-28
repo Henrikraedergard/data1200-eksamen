@@ -1,6 +1,7 @@
 /* 
 
     Koblet till index.html 
+    Styling spesifik for velkommen-siden
 
 */
 
@@ -10,12 +11,15 @@ section {
     justify-content: space-between;
     align-items: center;
     position: relative;
+    max-width: 1800px;
+    margin: 0px auto;
 }
 
 section>.content {
     width: 80vw;
     padding: 30px;
     z-index: 2;
+
 }
 
 section>.content>h1 {
@@ -72,8 +76,6 @@ section:nth-child(4)>.content {
     text-align: end;
 }
 
-section:nth-child(2)>.content>p, section:nth-child(4)>.content>p {}
-
 
 
 /* 
@@ -82,20 +84,24 @@ section:nth-child(2)>.content>p, section:nth-child(4)>.content>p {}
 
 */
 
+.landing>.images {
+    left: -210px;
+}
+
 .landing>.images>div:nth-child(1) {
-    left: -450px;
+    left: -200px;
     bottom: 40px;
     transform: rotate(-4deg);
 }
 
 .landing>.images>div:nth-child(2) {
-    left: -250px;
+    left: 0px;
     bottom: 80px;
     transform: rotate(2deg);
 }
 
 .landing>.images>div:nth-child(3) {
-    left: -50px;
+    left: 200px;
     bottom: 30px;
     transform: rotate(7deg);
 }
@@ -117,7 +123,7 @@ section:nth-child(2)>.content>p, section:nth-child(4)>.content>p {}
 
 .booking>.images>div:nth-child(2) {
     top: 0px;
-    left: 200px;
+    left: 180px;
     transform: rotate(8deg);
 }
 
@@ -137,7 +143,7 @@ section:nth-child(2)>.content>p, section:nth-child(4)>.content>p {}
 
 .meny>.images>div:nth-child(1) {
     left: -400px;
-    top: 200px;
+    top: 230px;
     transform: rotate(1deg);
 }
 
@@ -148,8 +154,8 @@ section:nth-child(2)>.content>p, section:nth-child(4)>.content>p {}
 }
 
 .meny>.images>div:nth-child(3) {
-    left: -50px;
-    top: 150px;
+    left: 0px;
+    top: 120px;
     transform: rotate(-6deg);
 }
 
@@ -175,13 +181,13 @@ section:nth-child(2)>.content>p, section:nth-child(4)>.content>p {}
 
 .accessibility>.images>div:nth-child(2) {
     left: 10px;
-    bottom: 70px;
+    top: -70px;
     transform: rotate(-2deg);
 }
 
 .accessibility>.images>div:nth-child(3) {
     left: 170px;
-    top: 150px;
+    top: 130px;
     transform: rotate(6deg);
 }
 
@@ -198,3 +204,220 @@ section:nth-child(2)>.content>p, section:nth-child(4)>.content>p {}
      -- Topical-section --
 
 */
+
+@media only screen and (max-width: 1400px) {
+    section {
+        flex-direction: column;
+        height: 1000px;
+        gap: 200px;
+        text-align: center;
+        margin: auto;
+        justify-content: center;
+    }
+
+    section>.content {
+        width: 100vw;
+    }
+
+    section>.content>h1 {
+        font-size: 30px;
+    }
+
+    section>.content>h1>span {
+        font-size: 35px;
+    }
+
+    section>.content>p {
+        line-height: 30px;
+    }
+
+    section:nth-child(2), section:nth-child(4) {
+        flex-direction: column;
+    }
+
+    section:nth-child(2)>.content,
+    section:nth-child(4)>.content {
+        text-align: center;
+    }
+
+
+    .images>div {
+        max-width: 400px;
+        max-height: 430px;
+    }
+
+    /* Vi har valgt å posisjonere alle bildene på nytt på mindere skjermer siden vi mener det blir enkelere å lage og vedlikeholde. */
+
+    /* På grunn av selektor hiarkiet må vi inn på hver enkelt bilde og endre stylingen */
+    /* Bildene har ganske kompleks styling så vi valgte å kjøre en litt enklere layout på mindre skjermer */
+
+    /* 
+
+     -- Landing-section --
+
+    */
+
+    .landing>.images {
+        left: 0px;
+    }
+
+    .landing>.images>div {
+        width: 80vw;
+        position: block;
+        top: 0px;
+        left: 0px;
+        height: 85vw;
+    }
+
+    .landing>.images>div:nth-child(1) {
+        display: none;
+    }
+
+    .landing>.images>div:nth-child(2) {
+        left: 50%;
+        top: -60%;
+        transform: translateX(-50%);
+    }
+
+    .landing>.images>div:nth-child(3) {
+        display: none;
+    }
+
+
+
+    /* 
+
+     -- Booking-section --
+
+*/
+
+    .booking>.images {}
+
+    .booking>.images>div {
+        width: 80vw;
+        position: block;
+        top: 0px;
+        left: 0px;
+        height: 85vw;
+    }
+
+    .booking>.images>div:nth-child(1) {
+        display: none;
+    }
+
+    .booking>.images>div:nth-child(2) {
+        left: 50%;
+        top: -60%;
+        transform: translateX(-50%);
+    }
+
+    .booking>.images>div:nth-child(3) {
+        display: none;
+    }
+
+    /* 
+
+     -- Meny-section --
+
+*/
+
+    .floating-img {
+        display: none;
+    }
+
+
+    .meny>.images {
+        left: 0px;
+    }
+
+    .meny>.images>div {
+        width: 80vw;
+        position: block;
+        top: 0px;
+        left: 0px;
+        height: 85vw;
+    }
+
+    .meny>.images>div:nth-child(1) {
+        display: none;
+    }
+
+    .meny>.images>div:nth-child(2) {
+        left: 50%;
+        top: -60%;
+        transform: translateX(-50%);
+    }
+
+    .meny>.images>div:nth-child(3) {
+        display: none;
+    }
+
+
+    /* 
+
+     -- Accessibility-section --
+*/
+
+
+
+    .accessibility>.images {
+        left: 0px;
+        top: 0px;
+    }
+
+    .accessibility>.images>div {
+        width: 80vw;
+        position: block;
+        top: 0px;
+        left: 0px;
+        height: 85vw;
+    }
+
+    .accessibility>.images>div:nth-child(1) {
+        display: none;
+    }
+
+    .accessibility>.images>div:nth-child(2) {
+        left: 50%;
+        top: -60%;
+        transform: translateX(-50%);
+    }
+
+    .accessibility>.images>div:nth-child(3) {
+        display: none;
+    }
+
+    /* 
+
+     -- Topical-section --
+
+*/
+
+    .topical>.images {
+        left: 0px;
+        top: 0px;
+    }
+
+    .topical>.images>div {
+        width: 80vw;
+        position: block;
+        top: 0px;
+        left: 0px;
+        height: 85vw;
+    }
+
+    .topical>.images>div:nth-child(1) {
+        display: none;
+    }
+
+    .topical>.images>div:nth-child(2) {
+        left: 50%;
+        top: -60%;
+        transform: translateX(-50%);
+    }
+
+    .topical>.images>div:nth-child(3) {
+        display: none;
+    }
+
+}

@@ -13,17 +13,35 @@
 <body>
 
     <!-- Navbar -->
-    <nav>
+    <nav id="big-nav">
         <a href="/index.html">Velkommen</a>
         <a class="active" href="/booking/booking.html">Booking</a>
-        <a href="/menu/menu-new.html">Meny</a>
-        <a href="/accessibility/Accessibility.html">Tilgjengelighet</a>
-        <a href="/topical/Topical.html">Topical</a>
+        <a href="/menu/menu.html">Meny</a>
+        <a href="/accessibility/accessibility.html">Tilgjengelighet</a>
+        <a href="/topical/topical.html">Topical</a>
+    </nav>
+
+    <!--
+            https://www.flaticon.com/free-icon/close_2997911?term=close&page=1&position=6&page=1&position=6&related_id=2997911&origin=search
+            https://www.flaticon.com/free-icon/hamburger_7710488?term=hamburger&page=1&position=1&page=1&position=1&related_id=7710488&origin=search
+        -->
+    <nav id="small-nav">
+        <button onclick="showNavMenu()">
+            <img src="../media/Ikoner/hamburger.png" alt="">
+        </button>
+        <ul id="nav-list">
+            <button onclick="hideNavBar()"><img src="../media/Ikoner/close.png" alt=""></button>
+            <a href="/index.html">Velkommen</a>
+            <a class="active" href="/booking/booking.html">Booking</a>
+            <a href="/menu/menu.html">Meny</a>
+            <a href="/accessibility/accessibility.html">Tilgjengelighet</a>
+            <a href="/topical/topical.html">Topical</a>
+        </ul>
     </nav>
 
     <header>
         <div>
-            <h1>Ha en uforglemmelig opplevelse. Book lokalet vårt!</h1>
+            <h1>Ha en uforglemmelig opplevelse. <span>Book lokalet vårt!</span></h1>
             <p>Sentralt lokale perfekt for sammenkomster, fester og mer.</p>
         </div>
         <img src="" alt="">
@@ -39,9 +57,6 @@
                 <li>1 Bar</li>
                 <li>1 Partytelt</li>
             </ul>
-        </section>
-        <section class="info-lokalet">
-            <h2>Info om lokalet</h2>
             <p>Fra store sammenkomster til små fester er dette stedet perfekt for alle slags festligheter. Book et stort
                 lokale i hjertet av Oslo med god plass til alle som kommer. Med 36 sitteplasser og god plass til å stå
                 kan dette bli den perfekte kvelden! Ta kontakt på telefon +47 92 66 17 00 eller epost
@@ -50,48 +65,60 @@
                 sammenkomst.</p>
         </section>
 
-        <section>
-            <h2>Finn lokalet</h2>
+        <section class="annen-info">
             <div>
-                <p>Arne Garborgs plass 4</p>
-                <p>0179 Oslo</p>
-            </div>
+                <h2>Finn lokalet</h2>
+                <div>
+                    <p>Arne Garborgs plass 4</p>
+                    <p>0179 Oslo</p>
+                </div>
 
-            <!-- Brukt https://www.embedgooglemap.net for å embedde google maps på nettsiden -->
-            <div class="mapouter">
-                <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
-                        src="https://maps.google.com/maps?q=Arne%20Garborgs%20plass%204,%200179%20Oslo&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                        href="https://putlocker-is.org"></a><br>
-                    <style>
-                        .mapouter {
-                            position: relative;
-                            text-align: right;
-                            height: 500px;
-                            width: 600px;
-                        }
-                    </style><a href="https://www.embedgooglemap.net"></a>
-                    <style>
-                        .gmap_canvas {
-                            overflow: hidden;
-                            background: none !important;
-                            height: 500px;
-                            width: 600px;
-                        }
-                    </style>
+                <!-- Brukt https://www.embedgooglemap.net for å embedde google maps på nettsiden -->
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=Arne%20Garborgs%20plass%204,%200179%20Oslo&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                            href="https://putlocker-is.org"></a><br>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: 500px;
+                                width: 600px;
+                            }
+                        </style><a href="https://www.embedgooglemap.net"></a>
+                        <style>
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 500px;
+                                width: 600px;
+                            }
+                        </style>
+                    </div>
                 </div>
             </div>
+            <div>
+                <div>
+                    <h2>Ta kontakt med oss på</h2>
+                    <p>Daglig leder Eunike Kristoffersen</p>
+                    <p>Epost: reservasjon@elvebreddenkafe.no</p>
+                    <p>Telefon: +47 92 66 17 00</p>
+                </div>
+                <form action="takk.html">
+                    <label for="form-navn">Fult navn</label>
+                    <input required placeholder="Skriv fult navn her..." type="text" name="name" id="form-navn">
+                    <label for="form-email">Email</label>
+                    <input required placeholder="Skriv epost her..." type="text" name="email" id="form-email">
+                    <label for="form-date">Datoen for reservasjon</label>
+                    <input required type="date" name="dato" id="form-date">
+                    <button>Send inn</button>
+                </form>
+            </div>
 
         </section>
-        <section>
-            <h2>Ta kontakt med oss på</h2>
-            <div>
-                <p>Daglig leder Eunike Kristoffersen</p>
-                <p>Epost: reservasjon@elvebreddenkafe.no</p>
-                <p>Telefon: +47 92 66 17 00</p>
-            </div>
-        </section>
     </main>
+    <script src="../navbar.js"></script>
 
 </body>
 

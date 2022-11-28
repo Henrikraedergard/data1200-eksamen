@@ -10,134 +10,176 @@
     <title>Document</title>
 </head>
 
-<!-- 
-    
-    -- DISCLAIMER --
-
-    Ble inspirert fra en protefølje nettside til en person som jeg ikke husker hva heter. 
-    Hele nettsiden er laget på egenhånd uten noe hjelp fra internettet eller personer utenfor gruppen.
-
--->
-
-
 <body>
     <!-- Navbar -->
-    <nav>
+    <nav id="big-nav">
         <a href="/index.html">Velkommen</a>
         <a href="/booking/booking.html">Booking</a>
-        <a href="/menu/menu-new.html">Meny</a>
-        <a href="/accessibility/Accessibility.html">Tilgjengelighet</a>
-        <a class="active" href="/topical/Topical.html">Topical</a>
+        <a href="/menu/menu.html">Meny</a>
+        <a href="/accessibility/accessibility.html">Tilgjengelighet</a>
+        <a class="active" href="/topical/topical.html">Topical</a>
     </nav>
 
-    <div class="bg" id="bg" onclick="removeText()"></div>
-    <div id="color-boxes">
-        <div onclick="showText(event)">
-            <p>Vi lagde tre personer med ulike bakgrunner, hindringer og kulturer. Så valgte
-                vi den personen hvor vi fant en problemstilling som vi kunne komme med en løsning til. For å komme på de
-                ulike personlige egenskapene brukte vi typiske funksjonshemninger og andre egenskaper som ikke egner seg
-                godt med teknologi slik den kommer i dag, men som kan bli brukt dersom det blir lagt til rette for disse
-                personene. Dette er en av grunnene på hvorfor vi ikke valgte noen med sterke psykiske funksjonshemninger
-                ettersom de ikke har mye nytte av digitaliseringen i dag. Vi satte heller fokus på fysiske
-                funksjonshemninger, hvor det som regel er små barrierer til å kunne digitalisere deres hverdag. Vi
-                valgte også ganske vanlige funksjonshemninger ettersom vi ser at mye av teknologien i dag ikke engang er
-                tilrettelagt for dem. Alle har ulik bakgrunn og ulik form for funksjonsnedsettelse. Vi ser ofte at disse
-                menneskene har mye vanskeligheter som vi uten funksjonsnedsettelse ikke tenker over. Dermed mener vi
-                deres behov for digitalisering burde blir mer prioritert.</p>
-        </div>
-        <div onclick="showText(event)">
-            <p>Vi tar i utgangspunkt i en ung mann som heter Gabriel, han er 28 år gammel og er rullestolbruker grunnet
-                bilulykke sammen med samboeren sin for 1 år siden da den sistnevnte omkom. I tillegg til det så mistet
-                han hørsel helt på venstre øre og 90% på høyre side så han er så og si døv. Gabriel bor for tiden alene
-                i en 35 kvm leilighet i Oslo sammen med hunden sin. Den siste perioden har vært ekstremt vanskelig for
-                Gabriel da han må begynne å venne seg til rullestolen. Etter 4 lange måneder i koma så har han endelig
-                kommet seg ut av sykehuset og fått en fysioterapeut som skal hjelpe Gabriel med opptrening. Selv om
-                legene har konstatert at Gabriel kommer til å være lam for resten av livet så gir han ikke opp. Han har
-                sterk viljestyrke og er svært oppegående.</p>
-        </div>
-        <div onclick="showText(event)">
-            <p>Når det kommer til å velge en moderne teknologi valgte vi mobiltelefon ettersom
-                den har stor innflytelse
-                hos
-                mennesker i
-                det digitale samfunn vi lever i. Den kan også gi stor nytte i hverdagen. En mobiltelefon er ikke laget
-                for å
-                være
-                tilgjengelig for alle. Dermed valgte vi å ta opp noen problemer Gabriel kommer til å møte dersom han
-                bruker
-                en
-                mobiltelefon.
-
-                Først og fremst er det vanskelig for han å navigere seg rundt på mobilen, trykke på knapper og bruke de
-                forskjellige
-                innstillingene som finns - så som tilgjengelighetsmoduser, eller øke og senke lydnivåer. Hans hørsel
-                vill
-                gjøre det
-                vanskelig for han å finne rett lydnivå, da han kommer til å trenge veldig høyt nivå for å høre noe. Med
-                behov for å
-                bruke høreapparat eller hodetelefoner, så vil han i tillegg trenge hjelp med å få disse av og på sig.
-                Annen
-                typ av
-                navigering, innstillingstilpasning eller knappetrykking vill vara problematisk på grunn av lammelsen
-                hans.
-                Mobiltelefonen er tilpasset for de som er fysisk kapabel til å utføre dette.</p>
-        </div>
-        <div onclick="showText(event)">
-            <p>
-                Ytterliggere problematikker for Gabriel kan være at mobilen fremst brukes til er telefonsamtaler o SMS.
-                Dels
-                grund av
-                Gabriels funksjonshemming med liten bevegelsesevne, dels på grund av redusert hørselsevne, så vill han
-                ikke
-                kunne gjøre
-                dette uten assistent. Telefonen har hjulpet oss mennesker med å få rask hjelp ved nødsituasjoner - et
-                viktig
-                hjelpemiddel som Gabriel ikke har evnen til å bruke.
-
-                Men telefonen brukes i dag til mye mer enn å ringe og sende SMS. Så som å ta bilder, lytte på musikk,
-                GPS,
-                spille spill
-                eller bare åpne og navigere på apper som Facebook og Instagram. Alt dette vil være nesten umulig for
-                Gabriel
-                å gjøre, da
-                han trenger noen til å trykke in på apper samt stabilisere telefonen for å ta bilder for han. på grunn
-                av
-                hans nedsatte
-                hørsel så vil det vara vanskelig å lytte på musikk, podcast och videos, også viktige ting så som
-                nyheter.
-                Dette gjør at
-                det blir mye vanskeligere for han å integrere i samfunnet.</p>
-        </div>
-        <div onclick="showText(event)">
-            <p>Løsninger for disse problemene kan være vanskelig å utføre, og er kanskje
-                derfor mange av disse nye
-                teknologiene ikke
-                tilrettelegger for alle. En løsning for hørsel problemet kan være å gjøre om lyd til tekst som brukeren
-                kan
-                lese. Dette
-                er ikke en perfekt løsning ettersom mange lyder er vanskelig å overføre til tekst. Samtidig får du ikke
-                overført
-                tonefallet og andre kommunikasjons egenskaper lyd har. Siden Gabriel er lam, har han også problemer med
-                å
-                bruke
-                telefonen. En løsning til dette kan være å bruke synet. Gjennom å se på knapper, bruke synet til å
-                utføre
-                bevegelser på
-                telefonen og lignende. Problemet med å bruke synet er at det er vanskelig å vite hvor brukeren ser på
-                skjermen. En annen
-                løsning vil være å styre og navigere på telefonen med hjelp av tale. En videre utvikling av “Siri” som
-                finnes på iPhone
-                i dag.</p>
-        </div>
-    </div>
-    <p id="helper-text" class="floating-text">Trykk på boksene over</p>
+    <!--
+                https://www.flaticon.com/free-icon/close_2997911?term=close&page=1&position=6&page=1&position=6&related_id=2997911&origin=search
+                https://www.flaticon.com/free-icon/hamburger_7710488?term=hamburger&page=1&position=1&page=1&position=1&related_id=7710488&origin=search
+            -->
+    <nav id="small-nav">
+        <button onclick="showNavMenu()">
+            <img src="../media/Ikoner/hamburger.png" alt="">
+        </button>
+        <ul id="nav-list">
+            <button onclick="hideNavBar()"><img src="../media/Ikoner/close.png" alt=""></button>
+            <a href="/index.html">Velkommen</a>
+            <a href="/booking/booking.html">Booking</a>
+            <a href="/menu/menu.html">Meny</a>
+            <a href="/accessibility/accessibility.html">Tilgjengelighet</a>
+            <a class="active" href="/topical/topical.html">Topical</a>
+        </ul>
+    </nav>
+    <header>
+        <h1>Teknologi er ikke laget likt for alle. <span>Dette er vår
+                refleksjon.</span></h1>
+        <p>Mange sliter ekstra mye når det kommer til teknologi i hverdagen. Dette er en tekst om akkurat det</p>
+    </header>
     <main>
+        <section class="sidebar">
+            <a href="#introduksjon">Introduksjon</a>
+            <a href="#utgangspunktet">Utgangspunktet</a>
+            <a href="#de-vanlige-problemene">De vanlige problemene</a>
+            <a href="#flere-problemer">Flere problemer</a>
+            <a href="#vore-losninger">Våre løsninger</a>
+        </section>
+        <section class="tekst">
+            <div id="introduksjon">
+                <h2>Introduksjon</h2>
+                <p>Vi lagde tre personer med ulike bakgrunner, hindringer og kulturer. Så valgte
+                    vi den personen hvor vi fant en problemstilling som vi kunne komme med en løsning til. For å komme
+                    på de
+                    ulike personlige egenskapene brukte vi typiske funksjonshemninger og andre egenskaper som ikke egner
+                    seg
+                    godt med teknologi slik den kommer i dag, men som kan bli brukt dersom det blir lagt til rette for
+                    disse
+                    personene. Dette er en av grunnene på hvorfor vi ikke valgte noen med sterke psykiske
+                    funksjonshemninger
+                    ettersom de ikke har mye nytte av digitaliseringen i dag. Vi satte heller fokus på fysiske
+                    funksjonshemninger, hvor det som regel er små barrierer til å kunne digitalisere deres hverdag. Vi
+                    valgte også ganske vanlige funksjonshemninger ettersom vi ser at mye av teknologien i dag ikke
+                    engang er
+                    tilrettelagt for dem. Alle har ulik bakgrunn og ulik form for funksjonsnedsettelse. Vi ser ofte at
+                    disse
+                    menneskene har mye vanskeligheter som vi uten funksjonsnedsettelse ikke tenker over. Dermed mener vi
+                    deres behov for digitalisering burde blir mer prioritert.</p>
+            </div>
+            <div id="utgangspunktet">
+                <h2>Utgangspunktet</h2>
+                <p>Vi tar i utgangspunkt i en ung mann som heter Gabriel, han er 28 år gammel og er rullestolbruker
+                    grunnet
+                    bilulykke sammen med samboeren sin for 1 år siden da den sistnevnte omkom. I tillegg til det så
+                    mistet
+                    han hørsel helt på venstre øre og 90% på høyre side så han er så og si døv. Gabriel bor for tiden
+                    alene
+                    i en 35 kvm leilighet i Oslo sammen med hunden sin. Den siste perioden har vært ekstremt vanskelig
+                    for
+                    Gabriel da han må begynne å venne seg til rullestolen. Etter 4 lange måneder i koma så har han
+                    endelig
+                    kommet seg ut av sykehuset og fått en fysioterapeut som skal hjelpe Gabriel med opptrening. Selv om
+                    legene har konstatert at Gabriel kommer til å være lam for resten av livet så gir han ikke opp. Han
+                    har
+                    sterk viljestyrke og er svært oppegående.</p>
+            </div>
+            <div id="de-vanlige-problemene">
+                <h2>De vanlige problemene</h2>
+                <p>Når det kommer til å velge en moderne teknologi valgte vi mobiltelefon ettersom
+                    den har stor innflytelse
+                    hos
+                    mennesker i
+                    det digitale samfunn vi lever i. Den kan også gi stor nytte i hverdagen. En mobiltelefon er ikke
+                    laget
+                    for å
+                    være
+                    tilgjengelig for alle. Dermed valgte vi å ta opp noen problemer Gabriel kommer til å møte dersom han
+                    bruker
+                    en
+                    mobiltelefon.
 
+                    Først og fremst er det vanskelig for han å navigere seg rundt på mobilen, trykke på knapper og bruke
+                    de
+                    forskjellige
+                    innstillingene som finns - så som tilgjengelighetsmoduser, eller øke og senke lydnivåer. Hans hørsel
+                    vill
+                    gjøre det
+                    vanskelig for han å finne rett lydnivå, da han kommer til å trenge veldig høyt nivå for å høre noe.
+                    Med
+                    behov for å
+                    bruke høreapparat eller hodetelefoner, så vil han i tillegg trenge hjelp med å få disse av og på
+                    sig.
+                    Annen
+                    typ av
+                    navigering, innstillingstilpasning eller knappetrykking vill vara problematisk på grunn av lammelsen
+                    hans.
+                    Mobiltelefonen er tilpasset for de som er fysisk kapabel til å utføre dette.</p>
+            </div>
+            <div id="flere-problemer">
+                <h2>Flere problemer</h2>
+                <p>Ytterliggere problematikker for Gabriel kan være at mobilen fremst brukes til er telefonsamtaler o
+                    SMS.
+                    Dels
+                    grund av
+                    Gabriels funksjonshemming med liten bevegelsesevne, dels på grund av redusert hørselsevne, så vill
+                    han
+                    ikke
+                    kunne gjøre
+                    dette uten assistent. Telefonen har hjulpet oss mennesker med å få rask hjelp ved nødsituasjoner -
+                    et
+                    viktig
+                    hjelpemiddel som Gabriel ikke har evnen til å bruke.
 
-
-
+                    Men telefonen brukes i dag til mye mer enn å ringe og sende SMS. Så som å ta bilder, lytte på
+                    musikk,
+                    GPS,
+                    spille spill
+                    eller bare åpne og navigere på apper som Facebook og Instagram. Alt dette vil være nesten umulig for
+                    Gabriel
+                    å gjøre, da
+                    han trenger noen til å trykke in på apper samt stabilisere telefonen for å ta bilder for han. på
+                    grunn
+                    av
+                    hans nedsatte
+                    hørsel så vil det vara vanskelig å lytte på musikk, podcast och videos, også viktige ting så som
+                    nyheter.
+                    Dette gjør at
+                    det blir mye vanskeligere for han å integrere i samfunnet.</p>
+            </div>
+            <div id="vore-losninger">
+                <h2>Våre løsninger</h2>
+                <p>Løsninger for disse problemene kan være vanskelig å utføre, og er kanskje
+                    derfor mange av disse nye
+                    teknologiene ikke
+                    tilrettelegger for alle. En løsning for hørsel problemet kan være å gjøre om lyd til tekst som
+                    brukeren
+                    kan
+                    lese. Dette
+                    er ikke en perfekt løsning ettersom mange lyder er vanskelig å overføre til tekst. Samtidig får du
+                    ikke
+                    overført
+                    tonefallet og andre kommunikasjons egenskaper lyd har. Siden Gabriel er lam, har han også problemer
+                    med
+                    å
+                    bruke
+                    telefonen. En løsning til dette kan være å bruke synet. Gjennom å se på knapper, bruke synet til å
+                    utføre
+                    bevegelser på
+                    telefonen og lignende. Problemet med å bruke synet er at det er vanskelig å vite hvor brukeren ser
+                    på
+                    skjermen. En annen
+                    løsning vil være å styre og navigere på telefonen med hjelp av tale. En videre utvikling av “Siri”
+                    som
+                    finnes på iPhone
+                    i dag.</p>
+            </div>
+        </section>
     </main>
-    <script defer src="Topical.js"></script>
 </body>
 
 </html>

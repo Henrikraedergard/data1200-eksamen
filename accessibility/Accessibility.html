@@ -6,56 +6,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="Accessibility.css">
+    <link rel="stylesheet" href="accessibility.css">
     <title>Document</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav>
+    <nav id="big-nav">
         <a href="/index.html">Velkommen</a>
         <a href="/booking/booking.html">Booking</a>
-        <a href="/menu/menu-new.html">Meny</a>
-        <a class="active" href="/accessibility/Accessibility.html">Tilgjengelighet</a>
-        <a href="/topical/Topical.html">Topical</a>
+        <a href="/menu/menu.html">Meny</a>
+        <a class="active" href="/accessibility/accessibility.html">Tilgjengelighet</a>
+        <a href="/topical/topical.html">Topical</a>
+    </nav>
+
+    <!--
+            https://www.flaticon.com/free-icon/close_2997911?term=close&page=1&position=6&page=1&position=6&related_id=2997911&origin=search
+
+            https://www.flaticon.com/free-icon/hamburger_7710488?term=hamburger&page=1&position=1&page=1&position=1&related_id=7710488&origin=search
+        -->
+
+    <nav id="small-nav">
+        <button onclick="showNavMenu()">
+            <img src="../media/Ikoner/hamburger.png" alt="">
+        </button>
+        <ul id="nav-list">
+            <button onclick="hideNavBar()"><img src="../media/Ikoner/close.png" alt=""></button>
+            <a href="/index.html">Velkommen</a>
+            <a href="/booking/booking.html">Booking</a>
+            <a href="/menu/menu.html">Meny</a>
+            <a class="active" href="/accessibility/accessibility.html">Tilgjengelighet</a>
+            <a href="/topical/topical.html">Topical</a>
+        </ul>
     </nav>
 
     <header>
-        <h1>Se våre tanker rundt tilgjengelighet</h1>
+        <h1>Inkluder alle i den teknologiske utviklingen. <span>Les våre tanker!</span></h1>
         <p>Tilgjengelighet for alle er noe vi strever for!</p>
     </header>
 
     <main>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, fugit aut cumque illum perspiciatis
-            ipsam placeat repellendus laudantium voluptates culpa facilis distinctio sunt officiis beatae
-            necessitatibus. Recusandae quos saepe maxime enim eius distinctio sapiente, amet, id ratione, repellendus
-            adipisci. Sapiente doloremque inventore labore accusamus vero repellat dolorum ducimus, cumque dolorem
-            officia in laudantium consequatur aspernatur sit voluptas saepe vel velit. Maiores perferendis soluta enim
-            aspernatur cupiditate? Libero beatae earum laborum, laudantium minima modi dolorem obcaecati perspiciatis
-            voluptatibus quisquam. Recusandae, tempore laboriosam? Aut quis esse dolorum? Ipsa quibusdam dolor tempore
-            cumque excepturi voluptatum. Adipisci, sint. Aliquid asperiores sit expedita aliquam, blanditiis animi cum
-            voluptas hic tempora neque atque. Perspiciatis in facilis ipsam totam consequatur quaerat labore maxime
-            illum iure placeat consectetur praesentium fugiat ea commodi eveniet ab fugit, minus asperiores corporis.
-            Eius quasi, earum itaque beatae magni error nostrum odit et corrupti architecto, sed repellat fugiat maiores
-            aperiam in doloremque molestias libero voluptate corporis laborum modi quod atque. Mollitia perferendis
-            quis, vitae aliquid soluta dolorum sequi maiores numquam eum illum unde fugiat, officiis tempora voluptatum
-            quae? Molestias, amet quas molestiae illo quam id architecto? Facere quisquam illum eaque laborum error?
-            Aperiam, veritatis sunt in libero amet, ipsam dignissimos adipisci consectetur, ea praesentium magni quo vel
-            voluptatem. A quia exercitationem laboriosam labore sed consequuntur ipsam fuga esse, ullam enim ut
-            dignissimos ea commodi dolores rem magni inventore! Culpa, reiciendis. Officiis, soluta, pariatur ipsam enim
-            fugit culpa aliquam itaque iste nemo sequi quaerat dolorem deserunt veniam consequatur quia mollitia nobis
-            voluptatem est in facere ex unde aut! Totam sit, dolorem, iusto sequi mollitia dolore a ea doloremque rem
-            facere iure odit officiis ex, quod minima harum eos ipsa odio necessitatibus quo corporis. At illum
-            exercitationem libero repellendus! Repudiandae doloremque enim autem ex temporibus, vitae nobis, cupiditate
-            ipsa, laudantium at quia aperiam totam. Mollitia eum sint nemo velit ipsam quas labore dolorum explicabo
-            odit nesciunt totam unde eaque quo, id voluptatibus maxime veritatis quisquam consequatur! Quidem eligendi
-            nam rem quam inventore dicta suscipit vero voluptatibus ratione? Sed, enim illum. Incidunt ex at iusto
-            laborum saepe eveniet? Ipsam voluptatibus temporibus sunt delectus eligendi odio. Quas illum libero odit
-            porro, reprehenderit dignissimos sit neque quos possimus placeat fugiat obcaecati eaque at consectetur
-            facilis! Vitae in repellendus dolorum ea doloremque aut optio ullam cum nisi possimus molestias, dolores
-            earum veritatis accusamus voluptates officiis? Debitis, dolorem! Deserunt eveniet repudiandae iste? Iste
-            voluptatibus cum nulla hic ea nisi autem?</p>
+        <p>Universal utforming og tilgjengelig design på nettsider er viktig for at alle brukere skal kunne lett
+            interagere med
+            og konsumere innholdet på nettsiden. For å oppnå dette har vi brukt automatiske tester, samt hatt det i
+            tankene mens vi har utviklet nettstedet. </p>
+        <p>Noen av beslutningene som har blitt tatt basert på tilgjengelighet er sterke kontraster på nettsiden så den
+            er lettleslig. Vi har også valgt stor tekst så det skal være lett å lese. På topical siden valgte vi å bruke
+            en annen tekstfarge på det oransje kortet ettersom den egentlige fargen vi brukte ble ganske vanskelig å
+            lese. Vi har også valgt å bruke både tykk og tynn tekst så det er lettere å skumlese de viktigste delene av
+            siden. Også i navbaren endret vi fra tynn tekst til tykk tekst ettersom det var vanskelig å lese hvilken
+            side du var på da det var tynn tekst med lys farge</p>
+        <p>For å gjøre nettsiden enkel å bruke har vi gått ganske minimalistisk med farger og layout. Vi har ikke mye
+            tekst av design så det skal være mye luft på siden så det er oversiktlig og enkelt for brukeren å bla rundt.
+            På
+            bildene våre har vi lagt til alternativ tekst så bilder som ikke kan vises, viser en beskrivende tekst i
+            stedet. Ikonene på menyen vår har vi lagt til tekst dersom du holder pc-musen over så personer som ikke
+            klarer å se hva ikonet representerer kan også lese hva allergenen i matretten er.
+        </p>
+        <p>Vi har valgt å bruke mye bilder da det er lettere for mange å få en forståelse ved å se, i stedet for å lese
+            hva det er. Det gjør at personer med lesevansker kan fortsatt utnytte nettsiden. Vi har også endret
+            linjehøyde på noen av tekstene for å gjøre det enklere å lese.</p>
+        <p>Når vi utviklet det responsive designet på nettsiden åpnet vi siden på telefonen vår for å se hvordan
+            nettsiden da vil se ut. Dette var mest for tekst-størrelser og lignende ettersom man holder telefonen mye
+            nærmere ansiktet enn med en dataskjerm, som vil si at teksten kan virke for liten når vi utvikler den på
+            pc-en, uten at den egentlig er det.</p>
     </main>
+    <script src="../navbar.js"></script>
 </body>
 
 </html>

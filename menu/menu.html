@@ -7,36 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="menu.css">
-    <script src="menu.js" defer></script>
-    <title>Elvebredden kafe</title>
+    <title>Document</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav>
+    <nav id="big-nav">
         <a href="/index.html">Velkommen</a>
         <a href="/booking/booking.html">Booking</a>
         <a class="active" href="/menu/menu.html">Meny</a>
-        <a href="/accessibility/Accessibility.html">Tilgjengelighet</a>
-        <a href="/topical/Topical.html">Topical</a>
+        <a href="/accessibility/accessibility.html">Tilgjengelighet</a>
+        <a href="/topical/topical.html">Topical</a>
     </nav>
-    <!-- Menyen og informasjon -->
+
+    <!--
+            https://www.flaticon.com/free-icon/close_2997911?term=close&page=1&position=6&page=1&position=6&related_id=2997911&origin=search
+            https://www.flaticon.com/free-icon/hamburger_7710488?term=hamburger&page=1&position=1&page=1&position=1&related_id=7710488&origin=search
+        -->
+    <nav id="small-nav">
+        <button onclick="showNavMenu()">
+            <img src="../media/Ikoner/hamburger.png" alt="">
+        </button>
+        <ul id="nav-list">
+            <button onclick="hideNavBar()"><img src="../media/Ikoner/close.png" alt=""></button>
+            <a href="/index.html">Velkommen</a>
+            <a href="/booking/booking.html">Booking</a>
+            <a class="active" href="/menu/menu.html">Meny</a>
+            <a href="/accessibility/accessibility.html">Tilgjengelighet</a>
+            <a href="/topical/topical.html">Topical</a>
+        </ul>
+    </nav>
+    <header>
+        <h1>Lokal mat fra våre nydelige kokker. <span>Se menyen vår!</span></h1>
+        <p>Ta en titt på hva som blir tilbudt på Elvebredden kafe.</p>
+        <img src="" alt="">
+    </header>
     <main>
         <section class="alle-menyer">
-            <div class="header">
-<<<<<<< HEAD
-                <h1>Menyen vår</h1>
-                <img title="Mat" src="media/stock-photos/pexels-andrea-piacquadio-3768131" alt="">
-            </div>
-=======
-
-                <h1>Elvebredden kafe <span> Meny </span></h1>
-            
-            </div>
-    
->>>>>>> 96c963aafe70d59cd7acab24e9e65aa1f5959f36
             <ul>
-                <h1>Lunsj 10:00 - 12:00</h1>
+                <h1>Lunsj</h1>
                 <li>
                     <div class="produkt-info">
                         <h2>Skagensmørbrød med reker</h2>
@@ -52,8 +61,7 @@
                 </li>
                 <li>
                     <div class="produkt-info">
-                        <h2>
-                            Gratinert chèvre med honning </h2>
+                        <h2>Gratinerad chèvre med ringlad honung </h2>
                         <p>Kokkens lunsj favoritt! Ciabatta med chèvreost, ruccola, honning og valnøtter.</p>
                         <!-- samling av allergi-ikoner -->
                         <ul class="allergener">
@@ -144,41 +152,8 @@
                 </li>
             </ul>
         </section>
-
-        <section class="info">
-            <h1>Info</h1>
-            <!-- Teksten endres dersom cafeen er åpen -->
-            <p id="erÅpent">Cafeen er <span title="Vi bruker din maskins lokal tid til å sjekke om cafeen er åpen"
-                    style="color: red;">stengt</span></p>
-            <div>
-                <p>Åpningstider:</p>
-                <p>Mandag - Fredag 10:00-16:00</p>
-                <p>Lørdag 10:00-17:00</p>
-            </div>
-
-            <div>
-                <p title="Epost">📧 reservasjon@elvebreddenkafe.no</p>
-                <p title="telefon">📞 92 66 17 00</p>
-                <p title="addresse">📍 Skomværsgata 2, Porsgrunn </p>
-            </div>
-
-            <ul class="sosiale-lenker">
-                <li>
-                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100050233854688&fref=ts">
-                        <img title="Facebook" src="../media/sosialeMedierLogo/fblogoretusjert.png" alt="">
-                        <p>Følg oss på Facebook</p>
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://www.instagram.com/elvebredden_kafe/">
-                        <img title="Instagram" headers="Insta" src="../media/sosialeMedierLogo/iglogoretusjert.png"
-                            alt="">
-                        <p>Følg oss på Instagram</p>
-                    </a>
-                </li>
-            </ul>
-        </section>
     </main>
+    <script src="../navbar.js"></script>
 </body>
 
 </html>

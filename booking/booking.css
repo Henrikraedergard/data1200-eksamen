@@ -3,6 +3,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 100px;
+    padding-bottom: 150px;
 }
 
 header {
@@ -14,25 +15,62 @@ header>div>h1 {
     font-size: 50px;
 }
 
-.praktisk-info>h2 {
-    text-align: center;
-    font-size: 50px;
-    margin-bottom: 70px;
+header>div>h1>span {
+    color: var(--color);
 }
 
+.praktisk-info {
+    width: 80vw;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.praktisk-info>h2 {
+    margin-bottom: 70px;
+}
 
 .praktisk-info>ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     font-weight: 100;
     font-size: 25px;
-    width: 80vw;
     gap: 30px;
-    margin: 20px auto;
+    margin-bottom: 50px;
 }
 
 .praktisk-info>ul>li {
     background-color: var(--bg-color);
     padding: 40px 20px;
     border-radius: 4px;
+}
+
+.annen-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.annen-info>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+}
+
+form>input {
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+form>button {
+
+    padding: 20px;
+    text-align: center;
+    background-color: var(--bg-color);
 }
