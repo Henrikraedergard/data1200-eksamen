@@ -6,6 +6,32 @@ main {
     padding-bottom: 150px;
 }
 
+main>p {
+    font-size: 22px;
+    text-align: center;
+    width: 70vw;
+    margin: 0px auto;
+}
+
+main>.images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+main>.images>div>img {
+    width: 100%;
+}
+
+
+.full-size {
+    grid-column: span 4;
+}
+
+.half-size {
+    grid-column: span 2;
+}
+
 header {
     margin: 100px 0px;
     text-align: center;

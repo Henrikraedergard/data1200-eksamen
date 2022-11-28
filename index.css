@@ -19,7 +19,6 @@ section>.content {
     width: 80vw;
     padding: 30px;
     z-index: 2;
-
 }
 
 section>.content>h1 {
@@ -191,19 +190,36 @@ section:nth-child(4)>.content {
     transform: rotate(6deg);
 }
 
-.accessibility>.floating-img {
-    position: absolute;
-    height: 400px;
-    top: -100px;
-    left: 60vw;
-}
-
 
 /* 
 
      -- Topical-section --
 
 */
+
+
+.topical>.images {
+    right: 250px;
+}
+
+.topical>.images>div:nth-child(1) {
+    left: -70px;
+    top: 150px;
+    transform: rotate(-9deg);
+}
+
+.topical>.images>div:nth-child(2) {
+    left: 10px;
+    top: -100px;
+    z-index: -1;
+    transform: rotate(-2deg);
+}
+
+.topical>.images>div:nth-child(3) {
+    left: 170px;
+    top: 30px;
+    transform: rotate(6deg);
+}
 
 @media only screen and (max-width: 1400px) {
     section {
