@@ -1,7 +1,7 @@
 /* 
 
 	Generell css styles. Koblet til alle HTML filer
-	Setter standard styles og styler navbaren på alle sidene.
+	Setter standard styles og styler nav-baren på alle sidene.
 
 */
 
@@ -14,6 +14,8 @@
 	--black-color: rgb(0, 0, 0);
 }
 
+
+/* Velger alle elementer */
 * {
 	font-family: "Montserrat", sans-serif;
 	padding: 0px;
@@ -22,10 +24,15 @@
 }
 
 
-/* Fjerner alle start stylesene så det blir lettere å style de på vår måte */
+body {
+	font-size: 20px;
+	margin-bottom: 100px;
+}
+
+/* Fjerner alle start stylene så det blir lettere å style de på vår måte */
 li,
 a,
-button {
+button, input {
 	all: initial;
 	all: unset;
 }
@@ -39,28 +46,34 @@ body {
 	cursor: default;
 }
 
-h1, h2, h3, h4, h5 {
+/* Vi bruker h1, h2, h3 og videre for at automatiske systemer og andre utviklere lett skal kunne skjønne layouten på siden og ikke for å endre font-sizen på headeren. */
+h1, h2, h3 {
 	font-size: 50px;
 }
 
-p {
-	font-size: 20px;
-}
 
 /* Navbar */
 
 nav {
 	display: flex;
-	gap: 80px;
-	height: 80px;
 	align-items: center;
 	justify-content: center;
-	font-size: 20px;
+	gap: 80px;
+	height: 80px;
+	margin: 0px auto;
+	padding: 0px 30px;
 }
 
 
 nav>a {
+	/* Legger til animasjon kun på padding */
 	transition: padding 200ms;
+}
+
+nav>a.active {
+	border-bottom: 2px solid var(--color);
+	color: var(--color);
+	font-weight: 600;
 }
 
 nav>a:hover {
@@ -69,69 +82,33 @@ nav>a:hover {
 	border-bottom: 1px solid var(--black-color);
 }
 
+
 /* 
-	Siden denne a.active:hover står under a:hover vil den bli prioritert og dermed vise border-bottom
-	med den aktive fargen og ikke fargen svart
+	Siden denne a.active:hover står under og er mer spesifik enn a:hover vil den bli prioritert og dermed vise border-bottom med den aktive fargen og 2px bredde
 */
 nav>a.active:hover {
 	border-bottom: 2px solid var(--color);
 }
 
 
-nav>.active, #small-nav>ul>.active {
-	color: var(--color);
-	text-decoration: none;
-	padding-bottom: 3px;
-	border-bottom: 2px solid var(--color);
-	font-weight: 600;
-}
-
-#small-nav {
-	display: none;
-}
-
-#small-nav>ul {
-	display: none;
-	gap: 80px;
-	height: 100vh;
-	align-items: center;
-	justify-content: center;
-	font-size: 20px;
-	flex-direction: column;
-	z-index: 100;
-	background-color: white;
-	width: 100vw;
-	position: absolute;
-	left: 110vw;
-	top: 50%;
-	font-size: 30px;
-	transform: translateY(-50%);
-}
-
-#small-nav>button {
-	position: absolute;
-	top: 30px;
-	right: 30px;
-}
-
-#small-nav>button>img, #small-nav>ul>button>img {
-	height: 40px;
-	cursor: pointer;
-}
-
 
 /* Styling for skjermer mindre enn 1000px bredde */
 @media only screen and (max-width: 1000px) {
-	#big-nav {
-		display: none;
+	nav {
+		height: initial;
+		gap: 30px;
+		flex-wrap: wrap;
+		font-size: 20px;
+		margin-top: 50px;
 	}
 
-	#small-nav {
-		display: block;
+	nav>a:hover {
+		text-decoration: none;
+		padding-bottom: 0px;
+		border-bottom: none;
 	}
 
-	#small-nav>button {
-		margin-left: auto;
-
+	h1, h2, h3 {
+		font-size: 30px;
 	}
 }

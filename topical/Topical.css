@@ -1,18 +1,31 @@
+/* 
+
+    -- header-section --
+
+*/
+
+header {
+    text-align: center;
+    margin: 100px 0px;
+    padding: 0px 10px;
+}
+
+header>h1>span {
+    color: var(--color);
+}
+
+/* 
+
+    -- main-section --
+
+*/
+
 main {
     display: grid;
     width: 90vw;
     margin: 0px auto;
     grid-template-columns: 1fr 3fr;
     gap: 30px;
-}
-
-header {
-    text-align: center;
-    margin: 100px 0px;
-}
-
-header>h1>span {
-    color: var(--color);
 }
 
 main>.sidebar {
@@ -30,7 +43,6 @@ main>.tekst {
     display: flex;
     flex-direction: column;
     gap: 100px;
-    margin-bottom: 250px;
 }
 
 main>.tekst>div>p {

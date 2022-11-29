@@ -1,15 +1,35 @@
+/* 
+
+    -- header-section --
+
+*/
+
 header {
     text-align: center;
     margin: 100px 0px;
+    padding: 0px 10px;
 }
 
 header>h1>span {
     color: var(--color);
 }
 
+/* 
+
+    -- main-section --
+
+*/
+
 main>p {
     width: 65vw;
+    margin: 0px auto;
     margin-top: 100px;
-    margin: 50px auto;
     line-height: 35px;
+}
+
+@media only screen and (max-width: 1000px) {
+    main>p {
+        width: 90vw;
+    }
+
 }

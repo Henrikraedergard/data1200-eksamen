@@ -16,7 +16,7 @@ section {
 }
 
 section>.content {
-    width: 80vw;
+    width: 50vw;
     padding: 30px;
     z-index: 2;
 }
@@ -48,6 +48,7 @@ section>.images {
     height: 300px;
     width: 300px;
     margin: 0px 60px;
+    max-width: 600px;
 }
 
 section>.images>div {
@@ -62,6 +63,7 @@ section>.images>div {
 section>.images>div>img {
     width: 100%;
 }
+
 
 /* Styling for annen-hver section */
 
@@ -172,6 +174,11 @@ section:nth-child(4)>.content {
      -- Accessibility-section --
 */
 
+
+.accessibility>.images {
+    left: 70px;
+}
+
 .accessibility>.images>div:nth-child(1) {
     left: -70px;
     top: 200px;
@@ -199,7 +206,7 @@ section:nth-child(4)>.content {
 
 
 .topical>.images {
-    right: 250px;
+    right: 170px;
 }
 
 .topical>.images>div:nth-child(1) {
@@ -224,15 +231,17 @@ section:nth-child(4)>.content {
 @media only screen and (max-width: 1400px) {
     section {
         flex-direction: column;
-        height: 1000px;
-        gap: 200px;
+        height: auto;
+        gap: 20px;
+        height: auto;
         text-align: center;
         margin: auto;
         justify-content: center;
+        padding: 100px 0px;
     }
 
     section>.content {
-        width: 100vw;
+        width: 95vw;
     }
 
     section>.content>h1 {
@@ -247,6 +256,20 @@ section:nth-child(4)>.content {
         line-height: 30px;
     }
 
+    section>.images {
+        position: static;
+        width: 100vw;
+        height: auto;
+
+    }
+
+    section>.images>div {
+        position: static;
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    /* Må endre disse også på grunn av selektor-hiarkiet */
     section:nth-child(2), section:nth-child(4) {
         flex-direction: column;
     }
@@ -256,16 +279,9 @@ section:nth-child(4)>.content {
         text-align: center;
     }
 
-
-    .images>div {
-        max-width: 400px;
-        max-height: 430px;
-    }
-
-    /* Vi har valgt å posisjonere alle bildene på nytt på mindere skjermer siden vi mener det blir enkelere å lage og vedlikeholde. */
+    /* Vi har valgt å kun ha et bilde på små skjermer.*/
 
     /* På grunn av selektor hiarkiet må vi inn på hver enkelt bilde og endre stylingen */
-    /* Bildene har ganske kompleks styling så vi valgte å kjøre en litt enklere layout på mindre skjermer */
 
     /* 
 
@@ -273,26 +289,13 @@ section:nth-child(4)>.content {
 
     */
 
-    .landing>.images {
-        left: 0px;
-    }
-
-    .landing>.images>div {
-        width: 80vw;
-        position: block;
-        top: 0px;
-        left: 0px;
-        height: 85vw;
-    }
-
     .landing>.images>div:nth-child(1) {
         display: none;
     }
 
     .landing>.images>div:nth-child(2) {
-        left: 50%;
-        top: -60%;
-        transform: translateX(-50%);
+        position: static;
+        transform: none;
     }
 
     .landing>.images>div:nth-child(3) {
@@ -307,24 +310,13 @@ section:nth-child(4)>.content {
 
 */
 
-    .booking>.images {}
-
-    .booking>.images>div {
-        width: 80vw;
-        position: block;
-        top: 0px;
-        left: 0px;
-        height: 85vw;
-    }
-
     .booking>.images>div:nth-child(1) {
         display: none;
     }
 
     .booking>.images>div:nth-child(2) {
-        left: 50%;
-        top: -60%;
-        transform: translateX(-50%);
+        position: static;
+        transform: none;
     }
 
     .booking>.images>div:nth-child(3) {
@@ -341,27 +333,13 @@ section:nth-child(4)>.content {
         display: none;
     }
 
-
-    .meny>.images {
-        left: 0px;
-    }
-
-    .meny>.images>div {
-        width: 80vw;
-        position: block;
-        top: 0px;
-        left: 0px;
-        height: 85vw;
-    }
-
     .meny>.images>div:nth-child(1) {
         display: none;
     }
 
     .meny>.images>div:nth-child(2) {
-        left: 50%;
-        top: -60%;
-        transform: translateX(-50%);
+        position: static;
+        transform: none;
     }
 
     .meny>.images>div:nth-child(3) {
@@ -375,28 +353,13 @@ section:nth-child(4)>.content {
 */
 
 
-
-    .accessibility>.images {
-        left: 0px;
-        top: 0px;
-    }
-
-    .accessibility>.images>div {
-        width: 80vw;
-        position: block;
-        top: 0px;
-        left: 0px;
-        height: 85vw;
-    }
-
     .accessibility>.images>div:nth-child(1) {
         display: none;
     }
 
     .accessibility>.images>div:nth-child(2) {
-        left: 50%;
-        top: -60%;
-        transform: translateX(-50%);
+        position: static;
+        transform: none;
     }
 
     .accessibility>.images>div:nth-child(3) {
@@ -409,27 +372,13 @@ section:nth-child(4)>.content {
 
 */
 
-    .topical>.images {
-        left: 0px;
-        top: 0px;
-    }
-
-    .topical>.images>div {
-        width: 80vw;
-        position: block;
-        top: 0px;
-        left: 0px;
-        height: 85vw;
-    }
-
     .topical>.images>div:nth-child(1) {
         display: none;
     }
 
     .topical>.images>div:nth-child(2) {
-        left: 50%;
-        top: -60%;
-        transform: translateX(-50%);
+        position: static;
+        transform: none;
     }
 
     .topical>.images>div:nth-child(3) {

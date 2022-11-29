@@ -1,11 +1,25 @@
+/* 
+
+    -- Header-section --
+
+*/
+
 header {
     margin: 100px 0px;
     text-align: center;
+    padding: 0px 10px;
 }
 
 header>h1>span {
     color: var(--color);
 }
+
+
+/* 
+
+    -- Main-section --
+
+*/
 
 main {
     background-color: rgb(252, 252, 252);
@@ -13,11 +27,8 @@ main {
     margin: 0px auto;
     box-shadow: 0px 0px 20px 6px rgba(128, 128, 128, 0.291);
     padding: 100px;
-    position: relative;
-    margin-bottom: 150px;
 }
 
-/* Liste med lunsj, middag og brødfjøler */
 
 .alle-menyer {
     display: flex;
@@ -36,6 +47,7 @@ main {
     margin-left: 10px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .alle-menyer>ul>h1 {
@@ -69,15 +81,11 @@ main {
 
 /* Allergener */
 .allergener {
-    font-size: 00px;
+    display: flex;
+    gap: 5px;
 }
 
 .allergener>li>img {
-    height: 30px;
-    margin-bottom: 20px;
-}
-
-img {
     height: 30px;
 }
 
@@ -87,25 +95,33 @@ img {
 
 @media only screen and (max-width: 900px) {
     main {
-        padding: 10px;
-        width: 95vw;
+        padding: 50px 10px;
+        width: 96vw;
     }
+
+    .alle-menyer>ul {
+        gap: 10px;
+    }
+
 
     .alle-menyer>ul>li {
         gap: 15px;
     }
 
-
-
     .alle-menyer>ul>h1 {
         font-size: 25px;
     }
 
+
     .produkt-info>h2 {
-        font-size: 20px;
+        font-size: 25px;
     }
 
-    .produkt-info>p {
+    .produkt-info {
         font-size: 15px;
+    }
+
+    .alle-menyer>ul>li>.pris {
+        font-size: 20px;
     }
 }
