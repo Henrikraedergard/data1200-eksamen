@@ -23,8 +23,22 @@ header>h1>span {
 main>p {
     width: 65vw;
     margin: 0px auto;
-    margin-top: 100px;
+    margin-top: 50px;
     line-height: 35px;
+}
+
+main img {
+    width: 100%;
+}
+
+.images {
+    width: 65vw;
+    margin: 0px auto;
+    /* Putter margin-top under margin: 0px auto siden koden kompileres fra topp til bunn og dermed blir stylen på bunn prioritert  */
+    margin-top: 50px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
 }
 
 @media only screen and (max-width: 1000px) {

@@ -3,6 +3,7 @@
 	Generell css styles. Koblet til alle HTML filer
 	Setter standard styles og styler nav-baren på alle sidene.
 
+	Vi har valgt å bruke lengre og mer spesifike selektorer ettersom det blir enkelere å utvide nettsiden med flere sider samt syntes vi det blir enklere å lese. En negativ konsekvens med dette er at selektorene blir lange, det tar lengre tid å utvikle og dersom endringer i htmlen blir gjort må vi endre på selektorene. 
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
@@ -11,7 +12,6 @@
 :root {
 	--color: rgb(141, 115, 67);
 	--bg-color: rgb(247, 247, 247);
-	--black-color: rgb(0, 0, 0);
 }
 
 
@@ -26,7 +26,6 @@
 
 body {
 	font-size: 20px;
-	margin-bottom: 100px;
 }
 
 /* Fjerner alle start stylene så det blir lettere å style de på vår måte */
@@ -37,9 +36,16 @@ button, input {
 	all: unset;
 }
 
-a:hover {
-	text-decoration: underline;
+a {
 	cursor: pointer;
+	border-bottom: 2px dotted black;
+	transition: color 200ms;
+}
+
+a:hover, a:focus {
+	color: var(--color);
+	border-bottom: 2px dashed var(--color);
+
 }
 
 body {
@@ -66,8 +72,9 @@ nav {
 
 
 nav>a {
-	/* Legger til animasjon kun på padding */
+	border-bottom: none;
 	transition: padding 200ms;
+	color: black;
 }
 
 nav>a.active {
@@ -76,21 +83,40 @@ nav>a.active {
 	font-weight: 600;
 }
 
-nav>a:hover {
+nav>a:hover, nav>a:focus {
 	text-decoration: none;
 	padding-bottom: 5px;
-	border-bottom: 1px solid var(--black-color);
+	color: black;
+	border-bottom: 1px solid black;
 }
-
 
 /* 
 	Siden denne a.active:hover står under og er mer spesifik enn a:hover vil den bli prioritert og dermed vise border-bottom med den aktive fargen og 2px bredde
 */
-nav>a.active:hover {
+nav>a.active:hover, nav>a.active:focus {
+	color: var(--color);
 	border-bottom: 2px solid var(--color);
 }
 
+footer {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 100px 40px;
+	background-color: var(--bg-color);
+	margin-top: 50px;
+}
 
+footer>.links {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+footer>.open {
+	max-width: 400px;
+
+}
 
 /* Styling for skjermer mindre enn 1000px bredde */
 @media only screen and (max-width: 1000px) {
@@ -110,5 +136,9 @@ nav>a.active:hover {
 
 	h1, h2, h3 {
 		font-size: 30px;
+	}
+
+	footer {
+		flex-direction: column;
 	}
 }

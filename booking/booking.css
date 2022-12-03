@@ -134,10 +134,17 @@ form>input {
 }
 
 form>button {
-
-    padding: 20px;
+    padding: 15px;
     text-align: center;
-    background-color: var(--bg-color);
+    background-color: var(--color);
+    color: white;
+    font-weight: 600;
+    transition: transform 200ms;
+    cursor: pointer;
+}
+
+form>button:hover, form>button:focus {
+    transform: scale(1.05);
 }
 
 @media only screen and (max-width: 1400px) {

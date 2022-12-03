@@ -39,10 +39,20 @@ main>.sidebar {
     top: 50px;
 }
 
+main>.sidebar>a {
+    border-bottom: none;
+}
+
 main>.tekst {
     display: flex;
     flex-direction: column;
     gap: 100px;
+}
+
+
+/* Velger alle bilder uansett hvor de er i tekst delen */
+main>.tekst img {
+    width: 100%;
 }
 
 main>.tekst>div>p {

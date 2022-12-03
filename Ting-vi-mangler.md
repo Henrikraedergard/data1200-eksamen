@@ -1,0 +1,1 @@
+-   Åpningstider på menyen.
