@@ -46,4 +46,10 @@ main img {
         width: 90vw;
     }
 
+    .images {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+    }
+
 }
