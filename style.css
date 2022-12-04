@@ -1,9 +1,9 @@
 /* 
 
-	Generell css styles. Koblet til alle HTML filer
-	Setter standard styles og styler nav-baren på alle sidene.
+	Koblet til alle HTML filer
+	Setter standard styles og styler nav-baren og footer på alle sidene.
 
-	Vi har valgt å bruke lengre og mer spesifike selektorer ettersom det blir enkelere å utvide nettsiden med flere sider samt syntes vi det blir enklere å lese. En negativ konsekvens med dette er at selektorene blir lange, det tar lengre tid å utvikle og dersom endringer i htmlen blir gjort må vi endre på selektorene. 
+	Vi har valgt å bruke lengre og mer spesifike selektorer ettersom det blir enkelere å utvide nettsiden i senere tid, samtidig syntes vi det blir enklere å lese. En negativ konsekvens med dette er at selektorene blir lange, det tar lengre tid å utvikle og dersom endringer i htmlen blir gjort må vi endre på selektorene. 
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
@@ -28,7 +28,7 @@ body {
 	font-size: 20px;
 }
 
-/* Fjerner alle start stylene så det blir lettere å style de på vår måte */
+/* Fjerner alle default stylene så det blir lettere å style på vår måte */
 li,
 a,
 button, input {
@@ -52,7 +52,7 @@ body {
 	cursor: default;
 }
 
-/* Vi bruker h1, h2, h3 og videre for at automatiske systemer og andre utviklere lett skal kunne skjønne layouten på siden og ikke for å endre font-sizen på headeren. */
+/* Vi bruker h1, h2, h3 og videre for at automatiske systemer og andre utviklere lett skal kunne skjønne layouten på siden og ikke for å endre font-sizen på teksten. */
 h1, h2, h3 {
 	font-size: 50px;
 }
@@ -87,12 +87,13 @@ nav>a:hover, nav>a:focus {
 	text-decoration: none;
 	padding-bottom: 5px;
 	color: black;
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid grey;
 }
 
 /* 
 	Siden denne a.active:hover står under og er mer spesifik enn a:hover vil den bli prioritert og dermed vise border-bottom med den aktive fargen og 2px bredde
 */
+
 nav>a.active:hover, nav>a.active:focus {
 	color: var(--color);
 	border-bottom: 2px solid var(--color);

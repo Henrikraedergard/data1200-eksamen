@@ -54,7 +54,7 @@ main>.images>div>img {
     width: 100%;
     height: 90%;
 
-    /* Gjør at bildet blor croppet i stedet for streched */
+    /* Gjør at bildet blir croppet i stedet for streched */
     object-fit: cover;
 }
 
