@@ -1,5 +1,12 @@
 /* 
 
+    Koblet till accessibility.html 
+    Styling spesifik for accessibility-siden
+
+*/
+
+/* 
+
     -- header-section --
 
 */
@@ -34,7 +41,7 @@ main img {
 .images {
     width: 65vw;
     margin: 0px auto;
-    /* Putter margin-top under margin: 0px auto siden koden kompileres fra topp til bunn og dermed blir stylen på bunn prioritert  */
+    /* Putter margin-top under margin: 0px auto; siden koden kompileres fra topp til bunn og dermed blir stylen på bunn prioritert  */
     margin-top: 50px;
     display: grid;
     gap: 20px;
@@ -43,6 +50,12 @@ main img {
 
 @media only screen and (max-width: 1000px) {
     main>p {
+        width: 90vw;
+    }
+
+    .images {
+        display: flex;
+        flex-direction: column;
         width: 90vw;
     }
 

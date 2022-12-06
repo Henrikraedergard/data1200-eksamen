@@ -1,6 +1,6 @@
-# data1200-oblig-1
+# data1200-Eksamen
 
-Innlevering til obligatory 1 i data1200
+Eksamen i data1200 2022
 
 ## Laget av:
 
